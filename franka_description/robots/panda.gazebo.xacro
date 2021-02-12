@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="panda_gazebo" params="robot_name">
+
+	<gazebo reference="${robot_name}_link0">
+	   <material>Gazebo/White</material>
+	   <mu1>0.61</mu1>
+	   <mu2>0.61</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_link1">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_link2">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_link3">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_link4">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_link5">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_link6">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_link7">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_link8">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_leftfinger">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_rightfinger">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>
+
+	<gazebo reference="${robot_name}_hand">
+	   <material>Gazebo/White</material>
+	   <mu1>0.2</mu1>
+	   <mu2>0.2</mu2>
+	</gazebo>	
+
+    </xacro:macro>
+</robot>

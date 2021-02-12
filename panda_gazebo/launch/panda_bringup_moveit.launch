@@ -1,0 +1,15 @@
+<launch>
+  
+    <!-- Launch Gazebo  -->
+    <include file="$(find panda_gazebo)/launch/panda_gazebo_world.launch" />
+
+    <!-- ros_control arm launch file -->
+    <include file="$(find panda_gazebo)/launch/panda_gazebo_states.launch" />   
+
+    <!-- ros_control trajectory control dof arm launch file -->
+    <include file="$(find panda_gazebo)/launch/panda_trajectory_controller.launch" />
+
+    <!-- moveit launch file -->
+    <include file="$(find panda_moveit_config)/launch/moveit_planning_execution.launch" />
+
+</launch>

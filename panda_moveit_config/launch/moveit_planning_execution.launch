@@ -1,0 +1,21 @@
+<launch>
+ # The planning and execution components of MoveIt! configured to 
+ # publish the current configuration of the robot (simulated or real)
+ # and the current state of the world as seen by the planner
+ <include file="$(find panda_moveit_config)/launch/planning_context.launch">
+  <arg name="load_robot_description" value="true"/>
+ </include>
+
+ <include file="$(find panda_moveit_config)/launch/move_group.launch">
+  <arg name="publish_monitored_planning_scene" value="true" />
+ </include>
+
+ # The visualization component of MoveIt!
+ <include file="$(find panda_moveit_config)/launch/moveit_rviz.launch">
+  <arg name="config" value="true" />
+ </include>
+
+
+ <node name="joint_state_desired_publisher" pkg="topic_tools" type="relay" args="joint_states joint_states_desired" />
+
+</launch>

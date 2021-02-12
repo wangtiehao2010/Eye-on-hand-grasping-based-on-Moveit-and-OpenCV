@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+    <include file="$(find panda_gazebo)/launch/panda_bringup_moveit.launch" />
+
+    <node pkg="panda_grasping" name="graspingDemo_panda" type="graspingDemo_panda" output="screen">
+        <param name="table_length"          value="0.3"/>
+        <param name="table_breadth"         value="0.3"/>
+        <param name="pregrasp_x"            value="-0.1"/>
+        <param name="pregrasp_y"            value="0.5"/>
+        <param name="pregrasp_z"            value="0.8"/>
+    </node>
+
+</launch>
